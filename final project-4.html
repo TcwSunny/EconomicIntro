@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8" />
+			<title>市場均衡</title>
+			<link rel="stylesheet" href="cssfpall.css">
+		</head>
+		
+	<body>
+		<div class="wrap">
+			<div class="header">
+				<a href="https://www.econ.ncku.edu.tw/"><img src="fp/economics-logo.png" id="econlogo"></a>
+			   <a href="final project.html"  ><img src="fp/home.png" id="home"></a>
+				
+				<ul class="drop-down-menu">
+					<li><a href="#" inclick="hidea()">經濟學專區</a>
+						<ul>
+							<li><a href="final project-2.html">賽局理論</a></li>
+							<li><a href="final project-3.html">市場結構</a></li>
+							<li><a href="final project-4.html">供需模型</a></li>
+						</ul>
+					</li>
+					<li><a href="final project-5.html">成大經濟系</a></li>
+					
+					<li><a href="final project-6.html">入學資訊</a></li>
+					<li><a href="final project-7.html">Ｑ＆Ａ</a></li>
+				</ul>
+				</div>
+		<div class="content4">
+				<a class="guide4" href="#demand">需求</a>
+				<a class="guide4" href="#supply">供給</a>
+				<a class="guide4" href="#equilibrium">市場均衡</a>
+			<div id="demand" class="block4">
+				<h2>需求</h2><br>
+				其他條件不變，財貨在不同價格下，消費者願意且有能力購買之數量集合。<br>
+				<ol>
+					<li><h3>需求曲線</h3>
+					<img src=".\fp\demand.jpg"></li>
+					
+					<li><h3>需求法則</h3>
+					其他條件不變，財貨之需求量變動與其價格變動，呈反向關係，需求曲線為負斜率。</li>
+					
+					<li><h3>需求保留價格</h3>
+					需求保留價格，亦可被簡稱為需求價格。當價格高於P0時，消費者便無購買意願，故又可稱為臨界價格。</li>
+					<ol type="a">
+					
+						<li>價格P0時，消費者願意且有能力購買之最多數量Q0為需求量。
+						<li>購買Q0單位商品時，願意支付之最高價格P0為需求保留價格。 
+					
+					</ol>
+				
+				
+				
+				</ol>
+				
+				
+				
+				
+			</div>
+			<div id="supply" class="block4">
+				<h2>供給</h2><br>
+				其他條件不變，生產者生產特定財貨，其願意且有能力提供之產量集合。<br>
+				<ol>
+					<li><h3>供給曲線</h3>
+					<img src=".\fp\supply.jpg"></li>
+					
+					<li><h3>供給法則</h3>
+					其他條件不變，財貨之供給量變動與其價格變動，呈正向關係供給曲線為正斜率。</li>
+					
+					<li><h3>供給保留價格</h3>
+					供給保留價格，亦可被簡稱為供給價格。當價格低於 P0時，生產者便無生產意願，故又可稱為臨界價格。 </li>
+					<ol type="a">
+					
+						<li>價格P0時，生產者願意且有能力生產之最多數量Q0為供給量。
+						<li>生產Q0單位商品時，願意接受之最低價格P0為需求保留價格。
+					
+					</ol>
+
+				</ol>
+				
+			</div>
+			
+			<div id="equilibrium" class="block4">
+				<h2>供需均衡分析</h2><br>
+				<ol>
+					<li><h3>供需均衡</h3>
+					<br>當供給等於需求時，產生供需均衡點，同時創造出均衡價格 P*與均衡數量Q*。
+					<img src=".\fp\equilibrium.jpg"></li>
+					
+					<li><h3>市場均衡之變動</h3>
+					市場外生變數，即市場商品量價以外之變數，將使得整條供給曲線與需求曲線移動，導致市場均衡出現變動。 </li>
+					
+					<ol type="a">
+					
+						<li>需求變動<br>
+						影響需求之外生變數(ex.所得、食安問題、其他相關商品價格)，造成需求變動，使得需求曲線整條移動。
+						<br><img src=".\fp\Demand Change.jpg"></li>
+						<li>供給變動<br>
+						影響供給之外生變數(ex.營業稅、技術進步、停滯性通貨膨脹)，造成供給變動，使得供給曲線整條移動。
+						<br><img src=".\fp\Supply Change.jpg"></li>
+					</ol>
+
+				</ol>
+			
+			</div>
+			<div><a href="final project-3.html" id="lastPage4">上一頁</a><a href="final project-5.html" id="nextPage4">下一頁</a></div>
+			
+			<div >
+				<fieldset class="Game">
+					<legend><b><h2>小遊戲</h2></b></legend>
+						以下變動會如何影響冰淇淋市場？
+						<br>
+						<button onclick="Sup()">開發出全自動冰淇淋機</button>
+						<button onclick="Sdown()">糖的價格上漲</button>
+						<button onclick="Sup()">廠商預期今年夏天很熱</button>
+						<button onclick="Sdown()">部分廠商勒令停業</button>
+						<button onclick="Dup()">天氣變熱</button>
+						<button onclick="Ddown()">天氣變冷</button>
+						<button onclick="Ddown()">冰棒價格下降(替代品)</button>
+						<button onclick="Dup()">甜筒價格下降(互補品)</button>
+						<br>
+						<div id="SDchange"></div>
+				</fieldset>
+			</div>
+		</div>
+		<div class="footer"></div>
+		</div>
+		<script>
+			function Sup(){
+				var SDchange=document.getElementById("SDchange");
+				SDchange.innerHTML="<h2>供給上升</h2><br><img src='.\\fp\\Sup.jpg' height='300px'>"
+			}
+			function Sdown(){
+				var SDchange=document.getElementById("SDchange");
+				SDchange.innerHTML="<h2>供給下降</h2><br><img src='.\\fp\\Sdown.jpg' height='300px'>"
+			}
+			function Dup(){
+				var SDchange=document.getElementById("SDchange");
+				SDchange.innerHTML="<h2>需求上升</h2><br><img src='.\\fp\\Dup.jpg' height='300px'>"
+			}
+			function Ddown(){
+				var SDchange=document.getElementById("SDchange");
+				SDchange.innerHTML="<h2>需求下降</h2><br><img src='.\\fp\\Ddown.jpg' height='300px'>"
+			}
+		</script>
+	</body>

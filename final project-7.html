@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8" />
+			<title>Q&A</title>
+			<link rel="stylesheet" href="cssfpall.css">
+		</head>
+		
+	<body>
+		<div class="wrap">
+			<div class="header">
+				<a href="https://www.econ.ncku.edu.tw/"><img src="fp/economics-logo.png" id="econlogo"></a>
+			   <a href="index.html"  ><img src="fp/home.png" id="home"></a>
+				
+				<ul class="drop-down-menu">
+					<li><a href="#" inclick="hidea()">經濟學專區</a>
+						<ul>
+							<li><a href="final project-2.html">賽局理論</a></li>
+							<li><a href="final project-3.html">市場結構</a></li>
+							<li><a href="final project-4.html">供需模型</a></li>
+						</ul>
+					</li>
+					<li><a href="final project-5.html">成大經濟系</a></li>
+					
+					<li><a href="final project-6.html">入學資訊</a></li>
+					<li><a href="final project-7.html">Ｑ＆Ａ</a></li>
+				</ul>
+				</div>
+		<div class="content7">
+				
+				
+			<div class="block7">
+				<ol id="QnA">
+					<li class="Question2"><b>請問你們科系較注重哪科高中學科？</b><br>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;數學、英文、國文、公民</p>
+
+					<li class="Question2"><b>課表很滿嗎？平常的作息？主要的必、選修是……？</b><br>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;主要的必修為個體經濟學及總體經濟學，還有會計學統計學等工具。通常大一基礎學分最多有12學分，同學可依據自身規劃作安排。</p>
+
+					<li class="Question2"><b>面試該怎麼準備？</b><br>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;多多關注國際間的新聞，特別是金融經濟相關領域的新聞，教授會問這方面的問題。且要多記得一些經濟常用的英文單字，在英文面試時會較容易聽得到。</p>
+
+					<li class="Question2"><b>高中時可以做什麼準備，可以有利申請該科系？</b><br>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可以增進英文實力，並去考英文檢定如多益、托福等，因為經濟系常需要讀大量英文，所以增強自身英文實力可以更快吸收國際間的新聞。另外也需關心經濟議題，以了解全球變化。</p>
+
+					<li class="Question2"><b>未來的出路有哪些？畢業的學長姐多在哪裡高就？</b><br>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其實經濟系的出路相當廣泛，往往在各行各業都可見到經濟系，但學長姐多往公職人員與金融相關行業發展。</p>
+					
+					<li class="Question2"><b>經濟系是如何將理論的知識應用於工作中</b><br>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;個體經濟學主要研究消費者和生產者的購買和生產行為，在行銷相關職業可利用此理論刺激消費者消費、提高生產者利潤；總體經濟學則研究整個國家的經濟現象，從事公職者可藉由此所學調整政策，使經濟更加穩定。</p>
+					
+					<li class="Question2"><b>有實習課或是實習機會嗎</b><br>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;系上不會強制安排實習，需自行投遞履歷到各公司，平時系辦會分享許多實習招募資訊。</p>
+
+
+				</ol>
+				
+				<fieldset>
+					<legend><b>新增問題</b></legend>
+				<form>
+					問題<br>
+					<input type="text" size="50" id="newQ">
+					<br>回答<br>
+					<textarea rows="5" cols="70" id="newA"></textarea>
+					<br>
+				</form>
+					<button onclick="Add()">新增</button>
+				
+				</fieldset>
+			</div>
+			<div><a href="final project-6.html" id="lastPage7">上一頁</a></div>
+		</div>
+		<div class="footer"></div>
+		</div>
+		<script>
+
+			function Add(){
+				var QnA=document.getElementById("QnA");
+				var newA=document.getElementById("newA");
+				var newQ=document.getElementById("newQ");
+				if(newA.value!=0 && newQ.value!=0){
+					QnA.innerHTML+="<li class='Question2'><b>"+newQ.value+"</b><br><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+newA.value+"</p>";
+				}
+			}
+		</script>
+	</body>

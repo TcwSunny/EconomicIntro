@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssfpall.css">
+    <title>首頁</title>
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    
+</head>
+<body>
+<div class="wrap">
+    <div class="header">
+    <a href="https://www.econ.ncku.edu.tw/"><img src="fp/economics-logo.png" id="econlogo"></a>
+   <a href="index.html"  ><img src="fp/home.png" id="home"></a>
+    
+    <ul class="drop-down-menu">
+        <li><a href="#" inclick="hidea()">經濟學專區</a>
+            <ul>
+                <li><a href="final project-2.html">賽局理論</a></li>
+                <li><a href="final project-3.html">市場結構</a></li>
+                <li><a href="final project-4.html">供需模型</a></li>
+            </ul>
+        </li>
+        <li><a href="final project-5.html">成大經濟系</a></li>
+        
+        <li><a href="final project-6.html">入學資訊</a></li>
+        <li><a href="final project-7.html">Ｑ＆Ａ</a></li>
+    </ul>
+    </div>
+    <div class="content">
+        <div class="haha1" onclick = "showa()" ><img class="image" src="fp/econ.jpg"><span><p class="guideblock">經濟學專區</p></span></div>
+        <div >
+        <ul id="more">
+            <li class="more"><a href="final project-2.html">賽局理論</a></li>
+            <li class="more"><a href="final project-3.html">市場結構</a></li>
+            <li class="more"><a href="final project-4.html">供需模型</a></li>
+        </ul>
+        </div>
+        <div class="haha"><a href="final project-5.html"><img  class="image" src="fp/ncku.jpg"><span><p class="guideblock">成大經濟系</p></span></a></div>
+        <div class="haha1"><a  href="final project-6.html"><img class="image" src="fp/enroll.jpg"><span><p class="guideblock">入學資訊</p></span></a></div>
+        <div class="haha"><a  href="final project-7.html"><img  class="image" src="fp/QA.jpg"><span><p class="guideblock">Ｑ＆Ａ</p></span></a></div>
+    
+    </div>
+    <div class="footer"></div>
+</div>
+<script>
+    
+    $("#more").hide();
+    function showa(){
+        $("#more").show(); 
+    }
+</script>
+</body>
+</html>

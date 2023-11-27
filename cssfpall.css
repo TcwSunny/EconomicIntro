@@ -1,0 +1,653 @@
+
+.wrap{
+    width: 800px;
+    margin: 0 auto;
+   
+}
+
+.header{
+   // padding: 20px;
+    height: 114px;
+    background-color: #C6F99C;
+}
+#home{
+    width: 20px;
+    height: 20px;
+}
+ul { /* 取消ul預設的內縮及樣式 */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.drop-down-menu {
+    
+    display: inline-block;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 13px;
+    
+}
+
+ul.drop-down-menu li {
+    //margin-top: 90px;
+    position: relative;
+    white-space: nowrap;
+    text-align: center;
+    width: 200px;
+    bottom: 0%;
+    
+}
+
+ul.drop-down-menu > li:last-child {
+    border-right: none;
+}
+
+ul.drop-down-menu > li {
+    float: left; /* 只有第一層是靠左對齊*/
+}
+
+ ul.drop-down-menu a {
+    
+    color: #81D9A0;
+    display: block;
+    
+    text-decoration: none;
+    line-height: 40px;
+    background-color: #2F4858;
+}
+ul.drop-down-menu a:hover { /* 滑鼠滑入按鈕變色*/
+    background-color: #2D6B7B;
+    color: #fff;
+}
+ul.drop-down-menu li:hover > a { /* 滑鼠移入次選單上層按鈕保持變色*/
+    background-color: #2D6B7B;
+    color: #fff;
+}
+ul.drop-down-menu ul {
+   
+    position: absolute;
+    z-index: 99;
+    
+    top: 100%;
+   min-width: 180px;
+}
+
+ul.drop-down-menu ul li {
+    margin-top: 0px;
+    
+}
+
+ul.drop-down-menu ul li:last-child {
+    border-bottom: none;
+}
+
+ul.drop-down-menu ul ul { /*第三層以後的選單出現位置與第二層不同*/
+    z-index: 999;
+    top: 10px;
+    left: 90%;
+}
+ul.drop-down-menu ul { /*隱藏次選單*/
+    display: none;
+}
+
+ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
+    display: block;
+}
+
+
+.content{
+    padding: 30px;
+	background:linear-gradient(#2F4858, #C6F99C);
+}
+a {
+    text-decoration:none;
+}
+#more{
+    position: absolute;
+    top:200px;
+    left:780px;
+}
+.more{
+    margin: 40px;
+    
+    padding: 10px;
+    background-color: #2F4858;
+    color:white;
+    transition:0.3s;
+}
+.more:hover{
+    background-color:#2D6B7B;
+}
+.more a{
+    color:white;
+}
+.footer{
+   // height: 70px;
+    background-color: #C6F99C;
+}
+.haha{
+    position: relative;
+    width:390px;
+    height: 260px;
+    margin:50px;
+    margin-left: 300px;
+    border:#2F4858 5px solid;
+}
+.haha1{
+    position: relative;
+    width:390px;
+    height: 260px;
+    margin:50px;
+    margin-left: 50px;
+    border:#2F4858 5px solid;
+}
+.image{
+    width: 100%;
+    height: 100%;
+}
+.image:hover{
+    opacity: 0.6;
+    transition: opacity 0.4s;}
+span{
+        position: absolute;
+        
+    }
+.guideblock{
+    color:white;
+    font-size: 22px;
+    opacity:1;
+ }
+ 
+
+.content2{
+    
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background:linear-gradient(#2F4858, #C6F99C);
+    //text-align: center;
+   
+}
+#guide2{
+    margin-left: 30px;
+    margin-top: -50px;
+}
+.guide2{
+    color:#2F4858;
+    background-color: #FFFADE;
+    margin: 20px;
+    text-decoration: none;
+   padding: 10px;
+   transition:0.3s;}
+.guide2:hover{
+    background-color: #e5dca5;
+   }
+.game2{
+    text-align: center;
+    
+}
+.game2 td{
+    border:1px solid black;
+    padding: 10px;
+}
+.block2 {
+    width: 700px;
+    background-color: #FFFADE;
+    margin: 10px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 35px;
+}
+table{
+    border:1px solid black;
+}
+#aaa{
+    margin-bottom: 20px;
+}
+#nextPage2{
+    color:#2F4858;
+    background-color: #FFFADE;
+    margin: 20px;
+    
+   padding: 10px;
+   transition:0.3s;
+   position: relative;
+   left:667px;
+    text-decoration: none;}
+#nextPage2:hover{
+    background-color: #e5dca5;
+}
+
+        .guide3{
+            color:#2F4858;
+            background-color: #FFFADE;
+            margin: 20px;
+        padding: 10px;
+        transition:0.3s;
+            text-decoration: none;}
+        .guide3:hover{
+            background-color: #e5dca5;
+        }
+        .content3{
+            padding: 30px;
+            background:linear-gradient(#2F4858, #C6F99C);
+        }
+        .footer{
+            height: 50px;
+            background-color: #C6F99C;
+        }
+		
+		#Perfect{
+		width: 700px;
+		background-color: #FFFADE;
+		margin: 10px;
+		padding: 10px;
+		margin-top: 30px;
+		margin-left: 15px;
+		}
+		#Oligopoly,#Monopolistic,#Monopoly{
+			width: 700px;
+			background-color: #FFFADE;
+			margin: 10px;
+			padding: 10px;
+            margin-top: 30px;
+			margin-left: 15px;
+		}
+		#Monopoly{
+			margin-bottom: 20px;
+		}
+		.market{
+			font-style:normal;
+			font-weight:lighter;
+			font-size:normal;
+			list-style-type:decimal;
+		}
+		#exam{
+			background-color: #FFFADE;
+		}
+		.Example{
+			width:100%;
+		}
+		#Score{
+		float:right;
+		font-size:200px;
+		}
+		#AAA{
+			display:none;
+		}
+		#lastPage3{
+			color:#2F4858;
+			background-color: #FFFADE;
+			margin: 20px;
+			left:-5px;
+			padding: 10px;
+			transition:0.3s;
+			position: relative;
+			
+			text-decoration: none;}
+		#lastPage3:hover{
+			background-color: #e5dca5;
+		}
+		#nextPage3{
+			color:#2F4858;
+			background-color: #FFFADE;
+			margin: 20px;
+			
+			padding: 10px;
+			transition:0.3s;
+			position: relative;
+			left:538px;
+			text-decoration: none;}
+		#nextPage3:hover{
+			background-color: #e5dca5;
+		}
+		
+		#examAnswer3{
+		text-align: center;
+		margin: 10px;
+		background-color: #C6F99C;
+		border-collapse: collapse;
+		}
+        #examAnswer3  td,th{
+			border: 2px solid #ddd;
+			padding: 8px;
+			margin: 8px;
+			background-color: #2F4858;
+			color: #fff;
+		}
+		#examAnswer3  tbody td:hover{
+			
+			background-color: #2f4845;
+			
+		}
+		
+		#examAnswer3  thead th{
+			background-color: #4BB5A0;
+		}
+		#examAnswer3 tbody th{
+			background-color: #4BB5A0;
+		}
+   .content4{
+        padding: 30px;
+        background:linear-gradient(#2F4858, #C6F99C);
+        }
+    .guide4{
+        color:#2F4858;
+        background-color: #FFFADE;
+        margin: 20px;
+       padding: 10px;
+       transition:0.3s;
+        text-decoration: none;}
+    .guide4:hover{
+        background-color: #e5dca5;
+           }
+        .block4{
+        width: 700px;
+        background-color: #FFFADE;
+        margin: 10px;
+        padding: 10px;
+        margin-top: 30px;
+        margin-left: 10px;
+            
+        }
+        #equilibrium{
+            margin-bottom: 20px;
+        }
+        #lastPage4{
+            color:#2F4858;
+            background-color: #FFFADE;
+            margin: 20px;
+            left:-10px;
+            padding: 10px;
+           transition:0.3s;
+            position: relative;
+            
+            text-decoration: none;}
+         #lastPage4:hover{
+             background-color: #e5dca5;
+         }
+         #nextPage4{
+            color:#2F4858;
+            background-color: #FFFADE;
+             margin: 20px;
+                
+            padding: 10px;
+           transition:0.3s;
+            position: relative;
+            left:533px;
+            text-decoration: none;}
+        #nextPage4:hover{
+            background-color: #e5dca5;
+        }
+        .footer{
+            height: 50px;
+            background-color: #C6F99C;
+        }
+                
+        #JC{
+             float:right;
+            height: 400px;
+        }
+        .Game{
+            background-color: #FFFADE;
+        }		   
+        .content5{
+    
+            padding-top: 70px;
+            padding-bottom: 70px;
+            background:linear-gradient(#2F4858, #C6F99C);
+            //text-align: center;
+           
+        }
+        .footer{
+            // height: 70px;
+             background-color: #C6F99C;
+         }
+         #guide5{
+            margin-left: 30px;
+            margin-top: -50px;
+        }
+        .guide5{
+            color:#2F4858;
+            background-color: #FFFADE;
+            margin: 20px;
+           padding: 10px;
+        
+           transition:0.3s;
+            text-decoration: none;}
+           .guide:hover{
+            background-color: #e5dca5;
+           }
+         #h{
+             width: 700px;
+             background-color: #FFFADE;
+             margin: 10px;
+             padding: 10px;
+             margin-top: 30px;
+             margin-left: 35px;
+             margin-bottom: 20px;
+         }
+         #hh,#hhh{
+            width: 700px;
+            background-color: #FFFADE;
+            margin: 10px;
+            padding: 10px;
+            
+            margin-left: 35px;
+            margin-bottom: 20px;
+        }
+        
+         #course{
+             text-align: center;
+           margin: 10px;
+           background-color: #C6F99C;
+           width: 95%;
+           border: 0px;
+         }
+         
+          
+          #course  td{
+            border: 1px solid #ddd;
+            padding: 8px;
+            margin: 8px;
+            background-color: #2F4858;
+            color: #fff;
+          }
+          #course  tbody td:hover{
+            
+            background-color: #2f4845;
+            
+          }
+          #course td a{
+              color:white;
+          }
+          #course  thead td{
+            background-color: #4BB5A0;
+        }
+        .cc{
+            width: 90px;
+        }
+        .dd{
+            width: 400px;
+        }
+        h2{
+            font-size: 30px;
+            color:#2F4858;
+            padding: 10px;
+            margin: 0;
+        }
+        .takec{
+            text-align: left;
+            margin: 10px;
+        }
+        .gogo{
+            list-style-type:disc ;
+            margin-left: 30px;
+        }
+        #lastPage5{
+            color:#2F4858;
+            background-color: #FFFADE;
+            margin: 20px;
+            left:15px;
+            padding: 10px;
+            transition:0.3s;
+            position: relative;
+            
+            text-decoration: none;}
+        #lastPage5:hover{
+            background-color: #e5dca5;
+        }
+        #nextPage5{
+            color:#2F4858;
+            background-color: #FFFADE;
+            margin: 20px;
+            
+            padding: 10px;
+            transition:0.3s;
+            position: relative;
+            left:558px;
+            text-decoration: none;}
+        #nextPage5:hover{
+            background-color: #e5dca5;
+        }
+                .guide6{
+                    color:#2F4858;
+                    background-color: #FFFADE;
+                    margin: 20px;
+                    text-decoration: none;
+                padding: 10px;
+                transition:0.3s;}
+                .guide6:hover{
+                    background-color: #e5dca5;
+                }
+                
+                .content6{
+                    padding-left: 30px;
+                    padding-top: 30px;
+                    padding-bottom: 70px;
+                    background:linear-gradient(#2F4858, #C6F99C);
+                    //text-align: center;
+                
+                }
+                .footer{
+                    height: 50px;
+                    background-color: #C6F99C;
+                }
+                
+                .block6 {
+                    width: 700px;
+                    background-color: #FFFADE;
+                    margin: 10px;
+                    padding: 10px;
+                    margin-top: 30px;
+                    margin-left: 10px;
+                }
+                #aboutScore,#aboutTest{
+                    width:95%;
+                    height:100px;
+                    border: none;
+                }
+                .Question{
+                    list-style-type:decimal;
+                    padding-right: 30px;
+                }
+                .Question2{
+                    list-style-type:decimal;
+                    padding-right: 30px;
+                }
+                .Answer{
+                    color:black;
+                    display:none;
+                }
+                #lastPage6{
+                    color:#2F4858;
+                    background-color: #FFFADE;
+                    margin: 20px;
+                    left:-10px;
+                    padding: 10px;
+                    transition:0.3s;
+                    position: relative;
+                    
+                    text-decoration: none;}
+                #lastPage6:hover{
+                    background-color: #e5dca5;
+                }
+                #nextPage6{
+                    color:#2F4858;
+                    background-color: #FFFADE;
+                    margin: 20px;
+                    
+                    padding: 10px;
+                    transition:0.3s;
+                    position: relative;
+                    left:534px;
+                    text-decoration: none;}
+                #nextPage6:hover{
+                    background-color: #e5dca5;
+                }
+                #paper{
+                    margin-bottom: 20px;
+                }
+                #aboutTest,#aboutScore{
+                    text-align: center;
+                margin: 10px;
+                background-color: #C6F99C;
+                }
+                
+                
+                #aboutTest  td,#aboutTest th, #aboutScore td,#aboutScore th{
+                    border: 1px solid #fff;
+                    padding: 8px;
+                    margin: 8px;
+                    background-color: #2F4858;
+                    color: #fff;
+                }
+                
+                #aboutTest  tbody td:hover, #aboutScore tbody td:hover{
+                    
+                    background-color: #2f4845;
+                    
+                }
+                #aboutTest  thead tr th,#aboutScore thead tr th{
+                    background-color: #4BB5A0;
+                    border: 1px solid #fff;
+                }
+                
+                .content7{
+                    padding: 30px;
+                    background:linear-gradient(#2F4858, #C6F99C);
+                }
+                .block7 {
+                    width: 700px;
+                    background-color: #FFFADE;
+                    margin: 10px;
+                    padding: 10px;
+                    margin-top: 30px;
+                    margin-left: 10px;
+                    margin-bottom: 20px;
+                    }
+                .footer{
+                    height: 50px;
+                    background-color: #C6F99C;
+                }
+                    
+                        
+                        .Question2{
+                            list-style-type:decimal;
+                            margin-right: 30px;
+                        }
+                       
+                        #lastPage7{
+                            color:#2F4858;
+                            background-color: #FFFADE;
+                            margin: 20px;
+                            left:-10px;
+                            padding: 10px;
+                            transition:0.3s;
+                            position: relative;
+                            text-decoration: none;}
+                        #lastPage7:hover{
+                            background-color: #e5dca5;
+                        }
+                        #newQ,#newA{
+                            background-color: #FFFADE;
+                        }

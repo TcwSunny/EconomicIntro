@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssfpall.css">
+    <title>賽局理論</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        
+    </script>
+</head>
+<body>
+<div class="wrap">
+    <div class="header">
+        <a href="https://www.econ.ncku.edu.tw/"><img src="fp/economics-logo.png" id="econlogo"></a>
+       <a href="index.html"  ><img src="fp/home.png" id="home"></a>
+        
+        <ul class="drop-down-menu">
+            <li><a href="#" inclick="hidea()">經濟學專區</a>
+                <ul>
+                    <li><a href="final project-2.html">賽局理論</a></li>
+                    <li><a href="final project-3.html">市場結構</a></li>
+                    <li><a href="final project-4.html">供需模型</a></li>
+                </ul>
+            </li>
+            <li><a href="final project-5.html">成大經濟系</a></li>
+            
+            <li><a href="final project-6.html">入學資訊</a></li>
+            <li><a href="final project-7.html">Ｑ＆Ａ</a></li>
+        </ul>
+        </div>
+    <div class="content2">
+        <div id="guide2">
+            <a  class="guide2" href="#a">囚徒困境</a>
+            <a  class="guide2" href="#aa">納許均衡</a>
+            <a  class="guide2" href="#aaa">其他有趣的賽局</a>
+            </div>
+        <div class="block2" id="a">
+        <h2>囚徒困境</h2>
+        <p>假設你和你的朋友一起販賣毒品被抓到了，警方告訴如果你招供，而對方不招供，則你將被立即釋放，
+            而對方將被判刑10年；如果兩人均招供，將均被判刑2年。如果兩人均不招供，將最有利，只被判刑半年。</p>
+        <p>你會怎麼選擇呢？（請點擊招供或不招供）</p>
+        <table class="game2" id="game" style="height: 70px;">
+            <tr ><td colspan="2" rowspan="2">賽局矩陣</td><td colspan="2">你朋友</td></tr>
+            <tr><td>招供</td><td>不招供</td></tr>
+            <tr><td rowspan="2">你</td><td onclick="right(1)">招供</td><td id="rightanswer">各判刑2年</td><td>你立即釋放，朋友判刑10年</td></tr>
+            <tr><td onclick="wrong(1)">不招供</td><td id="wronganswer">你判刑10年，朋友立即釋放	</td><td >各判刑半年</td></tr>
+        </table>
+        <p>結果：<span id="answer"></span></p>
+        </div>
+        <div class="block2" id="aa">
+            <h2>納許均衡 Nash Equilibrium</h2>
+            <p>各個玩家會因為敵對玩家的選擇，而採取不同策略，來達到對自身最好的情況</p>
+            <p>總體而言，假設其他參與者的策略保持不變，個人無法從改變行動中獲得增量收益，這就是納許均衡。
+                一個遊戲可能有多個納許均衡或根本沒有。</p>
+            <p>以囚犯困境的例子來說，兩人均招供就是納許均衡點</p>
+            <h2>柏拉圖最適 Pareto Efficiency</h2>
+            <p>如果一方能透過選擇不同行動，在不傷害別人的前提下獲得更好的結果，就被稱為柏拉圖改善 Pareto Improvement。</p>
+            <p><b>柏拉圖最適</b>的狀態就是不可能再有更多的柏拉圖改善的狀態。</p>
+            <p>以囚犯困境的例子來說，兩人皆不招供就是<b>柏拉圖最適</b>，但由於人心的猜忌，這種情況很難達到。</p>
+        </div>
+        <div class="block2" id="aaa">
+            <h2>其他有趣的賽局</h2>
+            <h3>性別戰 Battle of Sexes</h3>
+                <p>一對恩愛的夫妻在選擇假日出遊地點，丈夫想去觀賞球賽，妻子想去逛百貨公司，但兩人都想和對方一起行動，如果沒有一起行動，就獲得不了快樂。</p>
+                <p>請問此賽局的 Nash Equilibrium 為何？（請直接點擊矩陣）</p>
+                
+            <table class="game2" id="sexes" style="height: 70px;">
+                
+                <tr ><td colspan="2" rowspan="2">賽局矩陣</td><td colspan="2">丈夫</td></tr>
+                <tr><td>逛街</td><td>看球</td></tr>
+                <tr><td rowspan="2">妻子</td><td>逛街</td><td onclick="right(2)">(10,5)</td><td onclick="wrong(2)">(0,0)</td></tr>
+                <tr><td>看球</td><td onclick="wrong(2)">(0,0)</td><td onclick="right(2)">(5,10)</td></tr>
+            </table>
+            <p>答案：<span id="sexAnswer"></span></p>
+            <h3>膽小鬼賽局 The Game of Chicken</h3>
+                <p>兩名車手相對驅車而行。如果兩人拒絕轉彎，任由兩車相撞，最終兩人都會死於車禍；但如果有一方轉彎，而另一方沒有，那麼轉彎的一方會被恥笑為<b>膽小鬼</b>（chicken），另一方勝出。</p>
+                <p>請問此賽局的 Nash Equilibrium 為何？（請直接點擊矩陣）</p>
+                
+            <table class="game2" id="sexes" style="height: 70px;">
+                
+                <tr ><td colspan="2" rowspan="2">賽局矩陣</td><td colspan="2">Player1</td></tr>
+                <tr><td>轉彎</td><td>加速</td></tr>
+                <tr><td rowspan="2">Player2</td><td>轉彎</td><td onclick="wrong(3)">(3,3)</td><td onclick="wrong(3)">(-3,10)</td></tr>
+                <tr><td>加速</td><td onclick="wrong(3)">(10,-3)</td><td onclick="wrong(3)">(-10,-10)</td></tr>
+            </table>
+            <p>答案：<span id="chickenAnswer"></span></p>
+        </div>
+        <div><a href="final project-3.html" id="nextPage2">下一頁</a></div>
+        </div>
+    </div>
+    <div class="footer"></div>
+</div>
+<script>
+    function right(num){
+        if(num==1){
+        document.getElementById('answer').innerHTML="你朋友也會招供，所以一起被關兩年";
+        $('#answer').css('color','red');
+        $("#rightanswer").css('background-color','pink');
+        $("#wronganswer").css('background-color','#FFFADE');}
+        if(num==2){
+            document.getElementById('sexAnswer').innerHTML="答對了！棒棒";
+            $('#sexAnswer').css('color','red');
+        }
+    }
+    function wrong(num){
+        if(num==1){
+        document.getElementById('answer').innerHTML="你朋友會招供，所以你慘了，10年的青春不見了";
+        $('#answer').css('color','red');
+        $("#wronganswer").css('background-color','pink');
+        $("#rightanswer").css('background-color','#FFFADE');}
+        if(num==2){
+            document.getElementById('sexAnswer').innerHTML="答錯了";
+            $('#sexAnswer').css('color','red');
+        }
+        if(num==3){
+            document.getElementById('chickenAnswer').innerHTML="答錯了，Nash Equilibrium不存在！";
+            $('#chickenAnswer').css('color','red');
+        }
+        
+    }
+</script>
+</body>
+</html>
